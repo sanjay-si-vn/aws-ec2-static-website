@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanjay Cloud Project</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    font-family:Arial, sans-serif;
+    background:#050816;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.background{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:
+    radial-gradient(circle at top left,#3b82f6,transparent 30%),
+    radial-gradient(circle at bottom right,#9333ea,transparent 30%),
+    #050816;
+    filter:blur(40px);
+    z-index:-2;
+}
+
+.card{
+    width:420px;
+    padding:40px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.2);
+    text-align:center;
+    box-shadow:
+    0 0 30px rgba(0,0,0,0.4),
+    0 0 60px rgba(59,130,246,0.3);
+    transform-style:preserve-3d;
+    animation:float 5s ease-in-out infinite;
+}
+
+h1{
+    font-size:42px;
+    margin-bottom:15px;
+    background:linear-gradient(to right,#60a5fa,#c084fc);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+p{
+    font-size:18px;
+    line-height:1.6;
+    color:#d1d5db;
+}
+
+.badges{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.badge{
+    padding:10px 18px;
+    border-radius:30px;
+    background:rgba(255,255,255,0.12);
+    border:1px solid rgba(255,255,255,0.2);
+    font-size:14px;
+    transition:0.3s;
+}
+
+.badge:hover{
+    transform:translateY(-5px) scale(1.05);
+    background:#2563eb;
+}
+
+.glow{
+    position:absolute;
+    width:200px;
+    height:200px;
+    background:#3b82f6;
+    border-radius:50%;
+    filter:blur(120px);
+    top:-50px;
+    right:-50px;
+    opacity:0.5;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0px) rotateX(0deg);
+    }
+
+    50%{
+        transform:translateY(-15px) rotateX(5deg);
+    }
+
+    100%{
+        transform:translateY(0px) rotateX(0deg);
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="card">
+
+<div class="glow"></div>
+
+<h1>AWS Cloud Project 🚀</h1>
+
+<p>
+Hosted on Amazon EC2 using Ubuntu Linux and Nginx.
+This website is running live from a cloud server.
+</p>
+
+<div class="badges">
+    <div class="badge">AWS EC2</div>
+    <div class="badge">Linux</div>
+    <div class="badge">Nginx</div>
+    <div class="badge">Cloud</div>
+</div>
+
+</div>
+
+</body>
+</html>
